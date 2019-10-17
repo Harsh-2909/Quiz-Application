@@ -1,0 +1,82 @@
+{
+	"questions":[{
+		"question": "When does India celebrate Independence Day?",
+		"options": ["A. 15th August", 
+			"B. 2nd October", 
+			"C. 26th January", 
+			"D. 4th July"],
+		"answer": "A. 15th August"
+	},
+	{
+		"question": "Nobel prize is awarded for which of the following disciplines?",
+		"options": ["A. Literature, peace and economics", 
+			"B. Medicine or Physiology", 
+			"C. Chemistry and Physics", 
+			"D. All the above"],
+		"answer": "D. All the above"
+	},
+	{
+		"question": "Garampani Sanctuary is locate in which of the following places?",
+		"options": ["A. Junagarh, Gujarat", 
+			"B. Kohima, Nagaland", 
+			"C. Diphu, Assam", 
+			"D. Gangtok, Sikkim"],
+		"answer": "C. Diphu, Assam"
+	},
+	{
+		"question": "Entomology studies what?",
+		"options": ["A. Behavior of human beings",
+			"B. Insects",
+			"C. The origin and history of technical and scientific terms",
+			"D. The formation of rocks"],
+		"answer": "B. Insects"
+	},
+	{
+		"question": "Galileo was an astronomer who",
+		"options": ["A. Developed the telescope",
+			"B. Discovered four satellites of Jupiter",
+			"C. discovered that the movement of pendulum produces a regular time measurement",
+			"D. All the above"],
+		"answer": "B. Discovered four satellites of Jupiter"
+	},
+	{
+		"question": "Who is the father of geometry?",
+		"options": ["A. Aristotle",
+			"B. Euclid",
+			"C. Pythagoras",
+			"D. Kepler"],
+		"answer": "B. Euclid"
+	},
+	{
+		"question": "Indian player Jude Felix is popular for which sports?",
+		"options": ["A. Volleyball",
+			"B. Football",
+			"C. Hockey",
+			"D. Tennis"],
+		"answer": "C. Hockey"
+	},
+	{
+		"question": "The Indian, who holds the pride of beating the computers in mathematical wizard is?",
+		"options": ["A. Shakuntala Devi",
+			"B. Raja Ramanna",
+			"C. Ramanujam",
+			"D. Rina Panigrahi"],
+		"answer": "A. Shakuntala Devi"
+	},
+	{
+		"question": "Guru Gopi Krishna is popular for which form of Indian dance?",
+		"options": ["A. Bharatanatyam",
+			"B. Kuchipudi",
+			"C. Kathak",
+			"D. Manipuri"],
+		"answer": "B. Kuchipudi"
+	},
+	{
+		"question": "J.B. Dunlop is popular for which of the following inventions?",
+		"options": ["A. Model airplanes",
+			"B. Pneumatic rubber tire",
+			"C. Rubber boot",
+			"D. Automobile wheel rim"],
+		"answer": "B. Pneumatic rubber tire"
+	}]
+}
