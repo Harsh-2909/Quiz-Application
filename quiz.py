@@ -1,5 +1,6 @@
 import json
 import random
+import getpass
 
 def play():
 	score = 0
@@ -20,7 +21,19 @@ def play():
 		print(f'FINAL SCORE: {score}')
 
 def createAccount():
-	pass
+	username = input("Enter your USERNAME: ")
+	password = getpass.getpass(prompt= 'Enter your PASSWORD: ')
+	with open('assets/user_accounts.json', 'r+') as user_accounts:
+		users = json.load(user_accounts)
+		if username in users.keys():
+			print("An account of this Username already exists.\nPlease enter the login panel.")
+		else:
+			users[username] = password
+			user_accounts.seek(0)
+			json.dump(users, user_accounts)
+			user_accounts.truncate()
+			print("Account created successfully!")
+
 
 if __name__ == "__main__":
 	choice = 1
@@ -30,8 +43,9 @@ if __name__ == "__main__":
 		print('1. PLAY QUIZ')
 		print('2. ADD QUIZ QUESTIONS')
 		print('3. CREATE AN ACCOUNT')
-		print('4. SEE INSTRUCTIONS ON HOW TO PLAY THE GAME')
-		print('5. EXIT')
+		print('4. LOGIN PANEL')
+		print('5. SEE INSTRUCTIONS ON HOW TO PLAY THE GAME')
+		print('6. EXIT')
 		choice = int(input('ENTER YOUR CHOICE: '))
 		if choice == 1:
 			play()
@@ -43,5 +57,7 @@ if __name__ == "__main__":
 			pass
 		elif choice == 5:
 			pass
+		elif choice == 6:
+			break
 		else:
 			print('WRONG INPUT. ENTER THE CHOICE AGAIN')
