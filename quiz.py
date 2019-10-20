@@ -9,18 +9,19 @@ def play():
 		no_of_questions = len(j['questions'])
 		for i in range(10):
 			ch = random.randint(0, no_of_questions-1)
-			print(f'Q{i+1} {j["questions"][ch]["question"]}')
+			print(f'Q{i+1} {j["questions"][ch]["question"]}\n')
 			for option in j["questions"][ch]["options"]:
 				print(option)
-			answer = input("Enter your answer: ")
+			answer = input("\nEnter your answer: ")
 			if j["questions"][ch]["answer"][0] == answer[0].upper():
-				print("You are correct")
+				print("\nYou are correct")
 				score+=1
 			else:
-				print("You are incorrect")
-		print(f'FINAL SCORE: {score}')
+				print("\nYou are incorrect")
+		print(f'\nFINAL SCORE: {score}')
 
 def createAccount():
+	print("==========CREATE ACCOUNT==========")
 	username = input("Enter your USERNAME: ")
 	password = getpass.getpass(prompt= 'Enter your PASSWORD: ')
 	with open('assets/user_accounts.json', 'r+') as user_accounts:
@@ -48,6 +49,14 @@ def loginAccount():
 		elif users[username][0] == password:
 			print("You have successfully logged in.\n")
 
+def rules():
+	print('''==========RULES==========
+	1. Each round consists of 10 random questions. To answer, you must press A/B/C/D (case-insensitive).
+	Your final score will be given at the end.
+	2. Each question consists of 1 point. There's no negative point for wrong answers.
+	3. You can create an account from ACCOUNT CREATION panel.
+	4. You can login using the LOGIN PANEL. Currently, the program can only login and not do anything more.
+	''')
 
 if __name__ == "__main__":
 	choice = 1
@@ -70,7 +79,7 @@ if __name__ == "__main__":
 		elif choice == 4:
 			loginAccount()
 		elif choice == 5:
-			pass
+			rules()
 		elif choice == 6:
 			break
 		else:
