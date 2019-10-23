@@ -5,14 +5,14 @@ import getpass
 user = []
 
 def play():
-	print("==========QUIZ START==========")
+	print("\n==========QUIZ START==========")
 	score = 0
 	with open("assets/questions.json", 'r+') as f:
 		j = json.load(f)
-		no_of_questions = len(j)
 		for i in range(10):
+			no_of_questions = len(j)
 			ch = random.randint(0, no_of_questions-1)
-			print(f'Q{i+1} {j[ch]["question"]}\n')
+			print(f'\nQ{i+1} {j[ch]["question"]}\n')
 			for option in j[ch]["options"]:
 				print(option)
 			answer = input("\nEnter your answer: ")
@@ -21,6 +21,7 @@ def play():
 				score+=1
 			else:
 				print("\nYou are incorrect")
+			del j[ch]
 		print(f'\nFINAL SCORE: {score}')
 
 def quizQuestions():
@@ -28,6 +29,7 @@ def quizQuestions():
 		print("You must first login before adding questions.")
 	elif len(user) == 2:
 		if user[1] == "ADMIN":
+			print('\n==========ADD QUESTIONS==========\n')
 			ques = input("Enter the question that you want to add:\n")
 			opt = []
 			print("Enter the 4 options with character initials (A, B, C, D)")
@@ -47,7 +49,7 @@ def quizQuestions():
 
 
 def createAccount():
-	print("==========CREATE ACCOUNT==========")
+	print("\n==========CREATE ACCOUNT==========")
 	username = input("Enter your USERNAME: ")
 	password = getpass.getpass(prompt= 'Enter your PASSWORD: ')
 	with open('assets/user_accounts.json', 'r+') as user_accounts:
@@ -62,7 +64,7 @@ def createAccount():
 			print("Account created successfully!")
 
 def loginAccount():
-	print('==========LOGIN PANEL==========')
+	print('\n==========LOGIN PANEL==========')
 	username = input("USERNAME: ")
 	password = getpass.getpass(prompt= 'PASSWORD: ')
 	with open('assets/user_accounts.json', 'r') as user_accounts:
@@ -78,21 +80,26 @@ def loginAccount():
 			user.append(users[username][1])
 
 def logout():
-	pass
+	global user
+	if len(user) == 0:
+		print("You are already logged out.")
+	else:
+		user = []
+		print("You have been logged out successfully.")
 
 def rules():
-	print('''==========RULES==========
-	1. Each round consists of 10 random questions. To answer, you must press A/B/C/D (case-insensitive).
-	Your final score will be given at the end.
-	2. Each question consists of 1 point. There's no negative point for wrong answers.
-	3. You can create an account from ACCOUNT CREATION panel.
-	4. You can login using the LOGIN PANEL. Currently, the program can only login and not do anything more.
+	print('''\n==========RULES==========
+1. Each round consists of 10 random questions. To answer, you must press A/B/C/D (case-insensitive).
+Your final score will be given at the end.
+2. Each question consists of 1 point. There's no negative point for wrong answers.
+3. You can create an account from ACCOUNT CREATION panel.
+4. You can login using the LOGIN PANEL. Currently, the program can only login and not do anything more.
 	''')
 
 if __name__ == "__main__":
 	choice = 1
 	while choice != 7:
-		print('=========WELCOME TO QUIZ MASTER==========')
+		print('\n=========WELCOME TO QUIZ MASTER==========')
 		print('-----------------------------------------')
 		print('1. PLAY QUIZ')
 		print('2. ADD QUIZ QUESTIONS')
