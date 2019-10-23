@@ -96,6 +96,11 @@ Your final score will be given at the end.
 4. You can login using the LOGIN PANEL. Currently, the program can only login and not do anything more.
 	''')
 
+def about():
+	print('''\n==========ABOUT US==========
+This project has been created by Harsh Agarwal and his team.
+It is a basic Python Project for my 3rd Semester.''')
+
 if __name__ == "__main__":
 	choice = 1
 	while choice != 7:
@@ -108,6 +113,7 @@ if __name__ == "__main__":
 		print('5. LOGOUT PANEL')
 		print('6. SEE INSTRUCTIONS ON HOW TO PLAY THE GAME')
 		print('7. EXIT')
+		print('8. ABOUT US')
 		choice = int(input('ENTER YOUR CHOICE: '))
 		if choice == 1:
 			play()
@@ -123,5 +129,7 @@ if __name__ == "__main__":
 			rules()
 		elif choice == 7:
 			break
+		elif choice == 8:
+			about()
 		else:
 			print('WRONG INPUT. ENTER THE CHOICE AGAIN')
