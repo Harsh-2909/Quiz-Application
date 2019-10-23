@@ -1,0 +1,256 @@
+[{
+	"question": "When does India celebrate Independence Day?",
+	"options": ["A. 15th August", 
+		"B. 2nd October", 
+		"C. 26th January", 
+		"D. 4th July"],
+	"answer": "A. 15th August"
+},
+{
+	"question": "Nobel prize is awarded for which of the following disciplines?",
+	"options": ["A. Literature, peace and economics", 
+		"B. Medicine or Physiology", 
+		"C. Chemistry and Physics", 
+		"D. All the above"],
+	"answer": "D. All the above"
+},
+{
+	"question": "What is the theme of Asia health conference 2019?",
+	"options": ["A. Competitiveness of India Inc- India@60: Forging Ahead", 
+		"B. Competitiveness of India Inc- India@75: Forging Ahead", 
+		"C. Competitiveness of India Inc- India@80: Forging Ahead", 
+		"D. Competitiveness of India Inc- India@90: Forging Ahead"],
+	"answer": "B. Competitiveness of India Inc- India@75: Forging Ahead"
+},
+{
+	"question": "Which state has Introduced new kin technology?",
+	"options": ["A. Assam", 
+		"B. Delhi", 
+		"C. Haryana", 
+		"D. Punjab"],
+	"answer": "D. Punjab"
+},
+{
+	"question": "Who has won pro Kabadi League this season?",
+	"options": ["A. Dabang Delhi", 
+		"B. Bengal Warriors", 
+		"C. Puneri paltan", 
+		"D. U Mumba"],
+	"answer": "B. Bengal Warriors"
+},
+{
+	"question": "First private train in India run between which of the two cities?",
+	"options": ["A. Delhi-Lucknow", 
+		"B. Delhi-Ahmedabad", 
+		"C. Both of the above route", 
+		"D. None of the above"],
+	"answer": "A. Delhi-Lucknow"
+},
+{
+	"question": "As per a latest report by Brand Finance 2019, which is the India's most valuable brand?",
+	"options": ["A. Reliance", 
+		"B. Tata Group", 
+		"C. State Bank of India", 
+		"D. Flipkart"],
+	"answer": "B. Tata Group"
+},
+{
+	"question": "At the end of March 2019, what was the amount of India's external debt?",
+	"options": ["A. US $ 540 billion", 
+		"B. US $ 543 billion", 
+		"C. US $ 547 billion", 
+		"D. US $ 541 billion"],
+	"answer": "B. US $ 543 billion"
+},
+{
+	"question": "'LIBRA' an alternative of existing cryptocurrency like bitcoin is being developed by?",
+	"options": ["A. Facebook", 
+		"B. Google", 
+		"C. Microsoft", 
+		"D. None of the above"],
+	"answer": "A. Facebook"
+},
+{
+	"question": "In which year was Sports Authority of India established?",
+	"options": ["A. 1952", 
+		"B. 1967", 
+		"C. 1993", 
+		"D. 1982"],
+	"answer": "D. 1982"
+},
+{
+	"question": "Headquater of International Olympic Committee is situated at?",
+	"options": ["A. Athens", 
+		"B. Lausanne", 
+		"C. Dubai", 
+		"D. None of the above"],
+	"answer": "B. Lausanne"
+},
+{
+	"question": "'The Coalition Years' is the autobiography of?",
+	"options": ["A. L.K Advani", 
+		"B. Pranab Mukherjee", 
+		"C. Atal Behari Vajpayee", 
+		"D. Sonia Gandhi"],
+	"answer": "B. Pranab Mukherjee"
+},
+{
+	"question": "Which Indian revolutionary leader is known as 'Bagha Jatin'?",
+	"options": ["A. Jatindranath Mukherjee", 
+		"B. Jatindranath Bannerjee", 
+		"C. Jatindranath Das", 
+		"D. Jatindranath bose"],
+	"answer": "A. Jatindranath Mukherjee"
+},
+{
+	"question": "Garampani Sanctuary is locate in which of the following places?",
+	"options": ["A. Junagarh, Gujarat", 
+		"B. Kohima, Nagaland", 
+		"C. Diphu, Assam", 
+		"D. Gangtok, Sikkim"],
+	"answer": "C. Diphu, Assam"
+},
+{
+	"question": "Entomology studies what?",
+	"options": ["A. Behavior of human beings",
+		"B. Insects",
+		"C. The origin and history of technical and scientific terms",
+		"D. The formation of rocks"],
+	"answer": "B. Insects"
+},
+{
+	"question": "Galileo was an astronomer who",
+	"options": ["A. Developed the telescope",
+		"B. Discovered four satellites of Jupiter",
+		"C. discovered that the movement of pendulum produces a regular time measurement",
+		"D. All the above"],
+	"answer": "B. Discovered four satellites of Jupiter"
+},
+{
+	"question": "Who is the father of geometry?",
+	"options": ["A. Aristotle",
+		"B. Euclid",
+		"C. Pythagoras",
+		"D. Kepler"],
+	"answer": "B. Euclid"
+},
+{
+	"question": "Indian player Jude Felix is popular for which sports?",
+	"options": ["A. Volleyball",
+		"B. Football",
+		"C. Hockey",
+		"D. Tennis"],
+	"answer": "C. Hockey"
+},
+{
+	"question": "Who is the current chief of the world bank group?",
+	"options": ["A. Donald Tusk",
+		"B. David Malpass",
+		"C. Christine Lagarde",
+		"D. Jim Yong Kim"],
+	"answer": "B. David Malpass"
+},
+{
+	"question": "The Government of which state has instituted the 'Tansen Samman'?",
+	"options": ["A. West Bengal",
+		"B. Madhya Pradesh",
+		"C. Bihar",
+		"D. Gujrat"],
+	"answer": "B. Madhya Pradesh"
+},
+{
+	"question": "Who was associated with the creation of pentium chip?",
+	"options": ["A. Arun Netravalli",
+		"B. Sabeer Bhatia",
+		"C. Vinod Dham",
+		"D. Vijay Dham"],
+	"answer": "C. Vinod Dham"
+},
+{
+	"question": "Madhya Pradesh Chief Minister Kamal Nath has declared that Bhopal metro will be known as?",
+	"options": ["A. Bhoj Metro",
+		"B. Khoj Metro",
+		"C. Bhopal Metro",
+		"D. Auranga Metro"],
+	"answer": "A. Bhoj Metro"
+},
+{
+	"question": "Which is the first search engine of the internet?",
+	"options": ["A. Yahoo",
+		"B. Wais",
+		"C. Archie",
+		"D. Mozilla"],
+	"answer": "C. Archie"
+},
+{
+	"question": "In a Database Management System(DBMS) the content and the location of data is identified by ?",
+	"options": ["A. Subdata",
+		"B. Sequence Data",
+		"C. Beta Data",
+		"D. Meta Data"],
+	"answer": "D. Meta Data"
+},
+{
+	"question": "'.MOV' extensions refer to which kind of file?",
+	"options": ["A. Image file",
+		"B. Movie File",
+		"C. Audio File",
+		"D. ZIP File"],
+	"answer": "B. Movie File"
+},
+{
+	"question": "Who wrote the famous poem 'The Charge of the Light Brigade'?",
+	"options": ["A. Lord Alfred Tennyson",
+		"B. Christopher Marlowe",
+		"C. Johannes Gutenberg",
+		"D. Rene Descartes"],
+	"answer": "A. Lord Alfred Tennyson"
+},
+{
+	"question": "Who founded Indian National Army(INA)?",
+	"options": ["A. Netaji Subhas Chandra Bose",
+		"B. Mohan Singh",
+		"C. Rash Behari Bose",
+		"D. Jatridranath Mukherjee"],
+	"answer": "B. Mohan Singh"
+},
+{
+	"question": "The control of which state was handed over to british after marriage of King Charles 2 with portuguese princess in 1661?" ,
+	"options": ["A. Cochin",
+		"B. Bombay",
+		"C. Surat",
+		"D. Madras"],
+	"answer": "B. Bombay"
+},
+{
+	"question": "Which is the oldest football competition in India?",
+	"options": ["A. Aryan Cup",
+		"B. Santosh Trophy",
+		"C. Durand Cup",
+		"D. Federation Cup"],
+	"answer": "C. Durand Cup"
+},
+{
+	"question": "The Indian, who holds the pride of beating the computers in mathematical wizard is?",
+	"options": ["A. Shakuntala Devi",
+		"B. Raja Ramanna",
+		"C. Ramanujam",
+		"D. Rina Panigrahi"],
+	"answer": "A. Shakuntala Devi"
+},
+{
+	"question": "Guru Gopi Krishna is popular for which form of Indian dance?",
+	"options": ["A. Bharatanatyam",
+		"B. Kuchipudi",
+		"C. Kathak",
+		"D. Manipuri"],
+	"answer": "B. Kuchipudi"
+},
+{
+	"question": "J.B. Dunlop is popular for which of the following inventions?",
+	"options": ["A. Model airplanes",
+		"B. Pneumatic rubber tire",
+		"C. Rubber boot",
+		"D. Automobile wheel rim"],
+	"answer": "B. Pneumatic rubber tire"
+}]
