@@ -2,23 +2,49 @@ import json
 import random
 import getpass
 
+user = []
+
 def play():
+	print("==========QUIZ START==========")
 	score = 0
 	with open("assets/questions.json", 'r+') as f:
 		j = json.load(f)
-		no_of_questions = len(j['questions'])
+		no_of_questions = len(j)
 		for i in range(10):
 			ch = random.randint(0, no_of_questions-1)
-			print(f'Q{i+1} {j["questions"][ch]["question"]}\n')
-			for option in j["questions"][ch]["options"]:
+			print(f'Q{i+1} {j[ch]["question"]}\n')
+			for option in j[ch]["options"]:
 				print(option)
 			answer = input("\nEnter your answer: ")
-			if j["questions"][ch]["answer"][0] == answer[0].upper():
+			if j[ch]["answer"][0] == answer[0].upper():
 				print("\nYou are correct")
 				score+=1
 			else:
 				print("\nYou are incorrect")
 		print(f'\nFINAL SCORE: {score}')
+
+def quizQuestions():
+	if len(user) == 0:
+		print("You must first login before adding questions.")
+	elif len(user) == 2:
+		if user[1] == "ADMIN":
+			ques = input("Enter the question that you want to add:\n")
+			opt = []
+			print("Enter the 4 options with character initials (A, B, C, D)")
+			for _ in range(4):
+				opt.append(input())
+			ans = input("Enter the answer:\n")
+			with open("assets/questions.json", 'r+') as f:
+				questions = json.load(f)
+				dic = {"question": ques, "options": opt, "answer": ans}
+				questions.append(dic)
+				f.seek(0)
+				json.dump(questions, f)
+				f.truncate()
+				print("Question successfully added.")		
+		else:
+			print("You don't have access to adding questions. Only admins are allowed to add questions.")
+
 
 def createAccount():
 	print("==========CREATE ACCOUNT==========")
@@ -29,7 +55,7 @@ def createAccount():
 		if username in users.keys():
 			print("An account of this Username already exists.\nPlease enter the login panel.")
 		else:
-			users[username] = [password, 0]
+			users[username] = [password, "PLAYER"]
 			user_accounts.seek(0)
 			json.dump(users, user_accounts)
 			user_accounts.truncate()
@@ -48,6 +74,11 @@ def loginAccount():
 			print("Your password is incorrect.\nPlease enter the correct password and try again.")
 		elif users[username][0] == password:
 			print("You have successfully logged in.\n")
+			user.append(username)
+			user.append(users[username][1])
+
+def logout():
+	pass
 
 def rules():
 	print('''==========RULES==========
@@ -60,27 +91,30 @@ def rules():
 
 if __name__ == "__main__":
 	choice = 1
-	while choice != 6:
+	while choice != 7:
 		print('=========WELCOME TO QUIZ MASTER==========')
 		print('-----------------------------------------')
 		print('1. PLAY QUIZ')
 		print('2. ADD QUIZ QUESTIONS')
 		print('3. CREATE AN ACCOUNT')
 		print('4. LOGIN PANEL')
-		print('5. SEE INSTRUCTIONS ON HOW TO PLAY THE GAME')
-		print('6. EXIT')
+		print('5. LOGOUT PANEL')
+		print('6. SEE INSTRUCTIONS ON HOW TO PLAY THE GAME')
+		print('7. EXIT')
 		choice = int(input('ENTER YOUR CHOICE: '))
 		if choice == 1:
 			play()
 		elif choice == 2:
-			pass
+			quizQuestions()
 		elif choice == 3:
 			createAccount()
 		elif choice == 4:
 			loginAccount()
 		elif choice == 5:
-			rules()
+			logout()
 		elif choice == 6:
+			rules()
+		elif choice == 7:
 			break
 		else:
 			print('WRONG INPUT. ENTER THE CHOICE AGAIN')
